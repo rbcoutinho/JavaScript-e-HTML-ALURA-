@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Entendendo sobre as formas de utilização do javascript.</h1>
+    <script>
+        //Exemplo abaixo utilizando apenas texto no javascript;
+        document.write("Texto aqui");
+        //Exemplo abaixo pulando linha no javascript;
+        document.write("<br>");
+        //Exemplo abaixo realizando apenas cálculo no javascript;
+        document.write(10+20);
+        document.write("<br>");
+        //Exemplo abaixo o javascript entende que o 10+10 é string por causa da instrução de texto no início;
+        document.write("A idade de fulano é de " + 10+10);
+        document.write("<br>");
+        //Exemplo abaixo ajustamos o código acima incluindo () no cálculo para que seja realizado primeiro e não vire string;
+        document.write("A idade de fulano é de " + (10+10));
+        document.write("<br>");
+        //Exemplo abaixo realizamos cálculo mais complexo com divisão e mantemos os () para executar primeiro o cálculo;
+        document.write("A idade média dos 3 é de " + (19+23+33)/3);
+        document.write("<br>");
+        //Porém no exemplo abaixo mantemos os () mesmo sem string para poder realizar primeiro a soma e depois a divisão;
+        document.write((19+23+33)/3);
+        document.write("<br>");
+        //Ao contrário do código acima acima, como na matemática, foi primeiro executado a divisão e depois as somas;
+        document.write(19+23+33/3);
+        document.write("<br>");
+        //Exemplo abaixo realizamos concatenações e realizamos cálculos seguindo a ordem da matemática para resultado de porcentagem;
+        document.write("Eu acertei: " + 15/50*100 + "% da prova.");
+    </script>
+</body>
+</html>
